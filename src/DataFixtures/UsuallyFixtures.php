@@ -24,7 +24,6 @@ class UsuallyFixtures extends Fixture
         $user->setRoles(array('ROLE_ADMIN'));
         $password = $this->encoder->encodePassword($user, 'pass_1234');
         $user->setPassword($password);
-
         $manager->persist($user);
         $manager->flush();
     }
