@@ -19,8 +19,8 @@ class UsuallyFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $user = new User();
-        $user->setName('Vitaly');
-        $user->setEmail('garshin@mail.ru');
+        $user->setName('Polina');
+        $user->setEmail('mochalovapolina2000@mail.ru');
         $user->setRoles(array('ROLE_ADMIN'));
         $password = $this->encoder->encodePassword($user, 'pass_1234');
         $user->setPassword($password);
